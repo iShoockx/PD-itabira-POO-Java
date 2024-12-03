@@ -1,0 +1,28 @@
+Pessoa{
+    idade : int
+    lista : Livro[]
+}
+autor{
+    nacionalidade: string
+}
+Usuário{
+    idade: int
+}
+emprestimo{
+    data Retirada: date
+    data Devoluçao: date
+    usuário:Usuário
+    livro:Livro
+}
+Livro{
+    titulo: string
+    autor:autor
+    Genero:string
+}
+1 Autor é 1 pessoa
+1 Usuário é 1 pessoa
+1 Livro possui 1 Autor principal
+Autor pode ter mais de 1 livro 
+Cada livro pode ser emprestado muitas vezes porem nao pode estar em emprestimo mais de uma vez
+Cada Usuário pode realizar mais de um emprestimo
+Cada emprestimo esta ligado a um livro e a um usuario
