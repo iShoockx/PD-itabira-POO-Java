@@ -3,7 +3,11 @@ package com.mycompany.app;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import java.lang.annotation.Target;
+import com.mycompany.app.Model.Emprestimo;
+import com.mycompany.app.Model.Livro;
+import com.mycompany.app.Model.Usuario;
+import com.mycompany.app.Model.Autor;
+
 import java.util.Date;
 
 public class EmprestimoTest {
@@ -38,7 +42,7 @@ public class EmprestimoTest {
     }
 
     @Test
-    public void testGetDevoluçao(){
+    public void testGetDevolucao(){
         
         Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", true);
         
@@ -46,14 +50,14 @@ public class EmprestimoTest {
         
         Emprestimo emprestimo = new Emprestimo(new Date(), new Date(), livro, usuario);
 
-        emprestimo.setDevoluçao(new Date());
+        emprestimo.setDevolucao(new Date());
 
-        assertEquals(new Date(), emprestimo.getDevoluçao());
+        assertEquals(new Date(), emprestimo.getDevolucao());
     
     }
 
     @Test
-    public void testSetDevoluçao(){
+    public void testSetDevolucao(){
         
         Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", true);
         
@@ -61,9 +65,9 @@ public class EmprestimoTest {
         
         Emprestimo emprestimo = new Emprestimo(new Date(), new Date(), livro, usuario);
 
-        emprestimo.setDevoluçao(new Date());
+        emprestimo.setDevolucao(new Date());
 
-        assertEquals(new Date(), emprestimo.getDevoluçao());
+        assertEquals(new Date(), emprestimo.getDevolucao());
     
     }
 }

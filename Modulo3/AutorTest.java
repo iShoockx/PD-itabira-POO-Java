@@ -3,8 +3,8 @@ package com.mycompany.app;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import java.lang.annotation.Target;
-import com.mycompany.app.model.Autor;
+
+import com.mycompany.app.Model.Autor;
 
 public class AutorTest {
 

@@ -1,33 +1,28 @@
 package com.mycompany.app;
 
 import org.junit.Test;
-
-import com.mycompany.app.model.Usuario;
-
 import static org.junit.Assert.*;
 
-import java.lang.annotation.Target;
 
-public class UsuarioTest{
-    @Test
-    public void testGetIdade() {
+import com.mycompany.app.Model.Autor;
 
-        Usuario usuario = new Usuario("Gabriel",21);
+public class AutorTest {
 
-        usuario.setIdade(21);
+    @Test 
+    public void testGetNacionalidade() {
+        Autor autor = new Autor("Jess","Brasileira");
 
-        assertEquals(21, usuario.getIdade());
-        
+        autor.setNacionalidade("Brasileira");
+
+        assertEquals("Brasileira", autor.getNacionalidade());
     }
 
-    @Test
-    public void testSetIdade() {
+    @Test 
+    public void testSetNacionalidade() {
+        Autor autor = new Autor("Jess","Brasileira");
 
-        Usuario usuario = new Usuario("Gabriel",21);
+        autor.setNacionalidade("Brasileira");
 
-        usuario.setIdade(21);
-
-        assertEquals(21, usuario.getIdade());
-        
+        assertEquals("Brasileira", autor.getNacionalidade());
     }
 }

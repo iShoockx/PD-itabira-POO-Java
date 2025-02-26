@@ -3,15 +3,15 @@ package com.mycompany.app;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import java.lang.annotation.Target;
-
-import com.mycompany.app.model.Livro;
-import com.mycompany.app.model.Pessoa;
-import com.mycompany.app.model.Autor;
 
 
+import com.mycompany.app.Model.Livro;
 
-public class LivroTest {
+import com.mycompany.app.Model.Autor;
+
+
+
+public class livrosTest {
     @Test
     public void testGetTitulo(){
         
@@ -23,11 +23,11 @@ public class LivroTest {
    
     livros[0].setTitulo("Java Basico");
 
-    assertEquals("Java Basico", livro[0].getTitulo());
+    assertEquals("Java Basico", livros[0].getTitulo());
 
     livros[1].setTitulo("Java Avançado");
     
-    assertEquals("Java Avançado", livro[1].getTitulo());
+    assertEquals("Java Avançado", livros[1].getTitulo());
     }
 
     @Test
@@ -40,11 +40,11 @@ public class LivroTest {
    
     livros[0].setTitulo("Java Basico");
 
-    assertEquals("Java Basico", livro[0].getTitulo());
+    assertEquals("Java Basico", livros[0].getTitulo());
 
     livros[1].setTitulo("Java Avançado");
     
-    assertEquals("Java Avançado", livro[1].getTitulo());
+    assertEquals("Java Avançado", livros[1].getTitulo());
     }
 
     @Test
@@ -58,11 +58,11 @@ public class LivroTest {
    
     livros[0].setAutor(autor);
 
-    assertEquals(autor, livro[0].getAutor());
+    assertEquals(autor, livros[0].getAutor());
 
     livros[1].setAutor(autor);
     
-    assertEquals(autor, livro[1].getAutor());
+    assertEquals(autor, livros[1].getAutor());
     }
 
     @Test
@@ -76,11 +76,11 @@ public class LivroTest {
    
     livros[0].setAutor(autor);
 
-    assertEquals(autor, livro[0].getAutor());
+    assertEquals(autor, livros[0].getAutor());
 
     livros[1].setAutor(autor);
     
-    assertEquals(autor, livro[1].getAutor());
+    assertEquals(autor, livros[1].getAutor());
     }
 
     @Test
@@ -92,13 +92,13 @@ public class LivroTest {
     livros[1] = new Livro("Java Avançado", autor,"tecnologia", false);
 
    
-    livros[0].setgenero("tecnologia");
+    livros[0].setGenero("tecnologia");
 
-    assertEquals(autor, livro[0].getGenero());
+    assertEquals("tecnologia", livros[0].getGenero());
 
-    livros[1].setgenero("tecnologia");
+    livros[1].setGenero("tecnologia");
     
-    assertEquals(autor, livro[1].getGenero());
+    assertEquals("tecnologia", livros[1].getGenero());
     }
 
     @Test
@@ -110,13 +110,13 @@ public class LivroTest {
     livros[1] = new Livro("Java Avançado", autor,"tecnologia", false);
 
    
-    livros[0].setgenero("tecnologia");
+    livros[0].setGenero("tecnologia");
 
-    assertEquals(autor, livro[0].getGenero());
+    assertEquals("tecnologia", livros[0].getGenero());
 
-    livros[1].setgenero("tecnologia");
+    livros[1].setGenero("tecnologia");
     
-    assertEquals(autor, livro[1].getGenero());
+    assertEquals("tecnologia", livros[1].getGenero());
     }
 
     @Test
@@ -128,13 +128,13 @@ public class LivroTest {
     livros[1] = new Livro("Java Avançado", autor,"tecnologia", false);
 
    
-    livro[0].setDisponivel(true);
+    livros[0].setDisponivel(true);
 
-    assertEquals(true, livro[0].isDisponivel());
+    assertEquals(true, livros[0].isDisponivel());
 
-    livro[1].setDisponivel(false);
+    livros[1].setDisponivel(false);
     
-    assertEquals(false, livro[1].isDisponivel());
+    assertEquals(false, livros[1].isDisponivel());
     }
 
     @Test
@@ -146,14 +146,16 @@ public class LivroTest {
     livros[1] = new Livro("Java Avançado", autor,"tecnologia", false);
 
    
-    livro[0].setDisponivel(true);
+    livros[0].setDisponivel(true);
 
-    assertEquals(true, livro[0].isDisponivel());
+    assertEquals(true, livros[0].isDisponivel());
 
-    livro[1].setDisponivel(false);
+    livros[1].setDisponivel(false);
     
-    assertEquals(false, livro[1].isDisponivel());
+    assertEquals(false, livros[1].isDisponivel());
     }
 }
     
+    
+
     
